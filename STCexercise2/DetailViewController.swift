@@ -10,22 +10,40 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var detailArticleTitle: UILabel!
 
-
+    @IBOutlet weak var detailArticleContent: UITextView!
+    @IBOutlet weak var detailArticleImage: UIImageView!
+    
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
+        
+        //no large title on detiles screen
+        navigationItem.largeTitleDisplayMode = .never
+        
+        // setting article information from pervious screen
+        if let detailArticle = detailArticle {
+            if let title = detailArticleTitle {
+                title.text = detailArticle.title
+            }
+            if let content = detailArticleContent {
+                content.text = detailArticle.content
+            }
+            if let image = detailArticleImage {
+                image.downloadedFrom(link: detailArticle.image)
+                image.contentMode = .scaleToFill
             }
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        
         configureView()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,7 +51,7 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var detailItem: NSDate? {
+    var detailArticle: AnyObject? {
         didSet {
             // Update the view.
             configureView()

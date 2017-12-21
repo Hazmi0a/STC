@@ -13,7 +13,31 @@
 		D1BE74E41FEA97490055EC85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BE74E21FEA97490055EC85 /* Main.storyboard */; };
 		D1BE74E61FEA97490055EC85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1BE74E51FEA97490055EC85 /* Assets.xcassets */; };
 		D1BE74E91FEA97490055EC85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BE74E71FEA97490055EC85 /* LaunchScreen.storyboard */; };
+		D1BE74F21FEA991C0055EC85 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE74F01FEA991B0055EC85 /* Realm.framework */; };
+		D1BE74F31FEA991C0055EC85 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE74F11FEA991C0055EC85 /* RealmSwift.framework */; };
+		D1BE74F51FEA9A380055EC85 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE74F01FEA991B0055EC85 /* Realm.framework */; };
+		D1BE74F61FEA9A380055EC85 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE74F01FEA991B0055EC85 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1BE74F71FEA9A380055EC85 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE74F11FEA991C0055EC85 /* RealmSwift.framework */; };
+		D1BE74F81FEA9A380055EC85 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE74F11FEA991C0055EC85 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D1BE74FC1FEA9E890055EC85 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE74FB1FEA9E890055EC85 /* Article.swift */; };
+		D1BE74FE1FEBF1770055EC85 /* ExtendUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BE74FD1FEBF1770055EC85 /* ExtendUIImageView.swift */; };
+		D1BE75041FEC6D050055EC85 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D1BE75031FEC6D050055EC85 /* Default.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1BE74F91FEA9A380055EC85 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1BE74F81FEA9A380055EC85 /* RealmSwift.framework in Embed Frameworks */,
+				D1BE74F61FEA9A380055EC85 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D1BE74D91FEA97490055EC85 /* STCexercise2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STCexercise2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +48,11 @@
 		D1BE74E51FEA97490055EC85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1BE74E81FEA97490055EC85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1BE74EA1FEA97490055EC85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1BE74F01FEA991B0055EC85 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		D1BE74F11FEA991C0055EC85 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		D1BE74FB1FEA9E890055EC85 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D1BE74FD1FEBF1770055EC85 /* ExtendUIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendUIImageView.swift; sourceTree = "<group>"; };
+		D1BE75031FEC6D050055EC85 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BE74F51FEA9A380055EC85 /* Realm.framework in Frameworks */,
+				D1BE74F31FEA991C0055EC85 /* RealmSwift.framework in Frameworks */,
+				D1BE74F71FEA9A380055EC85 /* RealmSwift.framework in Frameworks */,
+				D1BE74F21FEA991C0055EC85 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +73,7 @@
 		D1BE74D01FEA97490055EC85 = {
 			isa = PBXGroup;
 			children = (
+				D1BE75031FEC6D050055EC85 /* Default.png */,
 				D1BE74DB1FEA97490055EC85 /* STCexercise2 */,
 				D1BE74DA1FEA97490055EC85 /* Products */,
 			);
@@ -56,13 +90,17 @@
 		D1BE74DB1FEA97490055EC85 /* STCexercise2 */ = {
 			isa = PBXGroup;
 			children = (
+				D1BE74FD1FEBF1770055EC85 /* ExtendUIImageView.swift */,
 				D1BE74DC1FEA97490055EC85 /* AppDelegate.swift */,
 				D1BE74DE1FEA97490055EC85 /* MasterViewController.swift */,
+				D1BE74FB1FEA9E890055EC85 /* Article.swift */,
 				D1BE74E01FEA97490055EC85 /* DetailViewController.swift */,
 				D1BE74E21FEA97490055EC85 /* Main.storyboard */,
 				D1BE74E51FEA97490055EC85 /* Assets.xcassets */,
 				D1BE74E71FEA97490055EC85 /* LaunchScreen.storyboard */,
 				D1BE74EA1FEA97490055EC85 /* Info.plist */,
+				D1BE74F01FEA991B0055EC85 /* Realm.framework */,
+				D1BE74F11FEA991C0055EC85 /* RealmSwift.framework */,
 			);
 			path = STCexercise2;
 			sourceTree = "<group>";
@@ -77,6 +115,8 @@
 				D1BE74D51FEA97490055EC85 /* Sources */,
 				D1BE74D61FEA97490055EC85 /* Frameworks */,
 				D1BE74D71FEA97490055EC85 /* Resources */,
+				D1BE74F91FEA9A380055EC85 /* Embed Frameworks */,
+				D1BE74FA1FEA9AE50055EC85 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,19 +169,38 @@
 				D1BE74E91FEA97490055EC85 /* LaunchScreen.storyboard in Resources */,
 				D1BE74E61FEA97490055EC85 /* Assets.xcassets in Resources */,
 				D1BE74E41FEA97490055EC85 /* Main.storyboard in Resources */,
+				D1BE75041FEC6D050055EC85 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1BE74FA1FEA9AE50055EC85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1BE74D51FEA97490055EC85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BE74FC1FEA9E890055EC85 /* Article.swift in Sources */,
 				D1BE74E11FEA97490055EC85 /* DetailViewController.swift in Sources */,
 				D1BE74DF1FEA97490055EC85 /* MasterViewController.swift in Sources */,
 				D1BE74DD1FEA97490055EC85 /* AppDelegate.swift in Sources */,
+				D1BE74FE1FEBF1770055EC85 /* ExtendUIImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +338,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STCexercise2",
+				);
 				INFOPLIST_FILE = STCexercise2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = STC.STCexercise2;
@@ -293,6 +356,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/STCexercise2",
+				);
 				INFOPLIST_FILE = STCexercise2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = STC.STCexercise2;
